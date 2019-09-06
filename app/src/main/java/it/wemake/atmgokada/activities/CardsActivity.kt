@@ -1,7 +1,8 @@
-package it.wemake.atmgokada
+package it.wemake.atmgokada.activities
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import it.wemake.atmgokada.R
 
 class CardsActivity : AppCompatActivity() {
 
