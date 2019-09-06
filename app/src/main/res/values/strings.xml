@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ATM Gokada</string>
+    <string name="insert_card_one">Insert Card One</string>
+    <string name="insert_card_two">Insert Card Two</string>
+    <string name="insert_card_three">Insert Card Three</string>
+    <string name="login_default_title">Welcome, User of Card</string>
+    <string name="enter_pin">Enter your PIN</string>
+    <string name="confirm">Confirm</string>
+</resources>
