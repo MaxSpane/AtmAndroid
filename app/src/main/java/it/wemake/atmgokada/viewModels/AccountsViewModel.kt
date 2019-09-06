@@ -32,8 +32,6 @@ class AccountsViewModel(application: Application) : AndroidViewModel(application
         repository.update(account)
     }
 
-    fun getAccount(account: Account) = viewModelScope.launch {
-        repository.update(account)
-    }
+    fun getAccount(cardNumber: Int): LiveData<Account> = repository.getAccount(cardNumber)
 
 }
