@@ -26,4 +26,8 @@ class CardsViewModel(application: Application) : AndroidViewModel(application) {
         repository.insert(card)
     }
 
+    fun update(card: Card) = viewModelScope.launch {
+        repository.update(card)
+    }
+
 }

@@ -9,4 +9,7 @@
     <string name="demo_user">Demo User</string>
     <string name="demo_pin">PIN: yoyo</string>
     <string name="insert_card">Insert Card</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="withdraw">Make Withdrawal</string>
+    <string name="deposit">Make Deposit</string>
 </resources>

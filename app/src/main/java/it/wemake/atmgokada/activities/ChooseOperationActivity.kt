@@ -4,10 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import it.wemake.atmgokada.R
 
-class PerformOperation : AppCompatActivity() {
+class ChooseOperationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perform_operation)
+        setContentView(R.layout.activity_choose_operation)
     }
+
 }

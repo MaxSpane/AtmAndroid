@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PerformOperation">
+        <activity android:name=".activities.PerformOperationActivity">
+        </activity>
+        <activity android:name=".activities.ChooseOperationActivity">
         </activity>
     </application>
 

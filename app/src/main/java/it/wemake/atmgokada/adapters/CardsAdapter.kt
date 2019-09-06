@@ -1,13 +1,16 @@
 package it.wemake.atmgokada.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatButton
 import androidx.recyclerview.widget.RecyclerView
 import it.wemake.atmgokada.R
+import it.wemake.atmgokada.activities.LoginActivity
 import it.wemake.atmgokada.models.Card
 
 class CardsAdapter(
@@ -25,7 +28,12 @@ class CardsAdapter(
         val card = cards[position]
 
         holder.accountNameTV.text = card.accountName
-        holder.pinTV.text = "PIN: \$ ${card.pin}"
+        holder.pinTV.text = "PIN: ${card.pin}"
+
+        val intent = Intent(context, LoginActivity::class.java)
+        intent.putExtra("card", card)
+
+        holder.insertCardButton.setOnClickListener { context.startActivity(intent) }
 
     }
 
@@ -45,6 +53,7 @@ class CardsAdapter(
 
         val accountNameTV : TextView = itemView.findViewById(R.id.tv_account_name)
         val pinTV : TextView = itemView.findViewById(R.id.tv_pin)
+        val insertCardButton : AppCompatButton = itemView.findViewById(R.id.btn_insert_card)
 
     }
 

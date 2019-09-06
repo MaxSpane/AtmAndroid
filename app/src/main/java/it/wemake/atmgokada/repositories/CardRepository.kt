@@ -17,4 +17,8 @@ class CardRepository(private val cardDao: CardDao) {
         cardDao.insertCards(card)
     }
 
+    suspend fun update(card: Card) {
+        cardDao.updateCards(card)
+    }
+
 }
