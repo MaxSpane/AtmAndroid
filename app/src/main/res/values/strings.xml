@@ -6,4 +6,7 @@
     <string name="login_default_title">Welcome, User of Card</string>
     <string name="enter_pin">Enter your PIN</string>
     <string name="confirm">Confirm</string>
+    <string name="demo_user">Demo User</string>
+    <string name="demo_pin">PIN: yoyo</string>
+    <string name="insert_card">Insert Card</string>
 </resources>
