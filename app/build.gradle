@@ -24,6 +24,8 @@ android {
     }
     packagingOptions {
         exclude 'META-INF/atomicfu.kotlin_module'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+        exclude 'META-INF/proguard/coroutines.pro'
     }
 }
 
@@ -54,5 +56,5 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
 
-    implementation "com.google.android.material:material:1.0.0-rc02"
+    implementation "com.google.android.material:material:1.0.0"
 }

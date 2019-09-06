@@ -9,5 +9,5 @@ class Account(
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "account_number") val accountNumber: Int,
     @ColumnInfo(name = "card_number") val cardNumber: Int,
     @ColumnInfo(name = "balance") val balance: Int,
-    @ColumnInfo(name = "account_type") val accountType: Int
+    @ColumnInfo(name = "account_type") val accountType: String
 )

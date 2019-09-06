@@ -19,7 +19,7 @@ interface AccountDao {
     @Query("SELECT * from accounts")
     fun getAllAccounts(): LiveData<List<Account>>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAccounts(vararg accounts: Account)
 
     @Query("DELETE FROM accounts")

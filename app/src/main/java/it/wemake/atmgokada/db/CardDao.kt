@@ -16,7 +16,7 @@ interface CardDao {
     @Query("SELECT * from cards")
     fun getAllCards(): LiveData<List<Card>>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCards(vararg card: Card)
 
     @Query("DELETE FROM cards")
