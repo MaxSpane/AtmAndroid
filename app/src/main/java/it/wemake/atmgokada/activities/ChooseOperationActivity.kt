@@ -35,6 +35,20 @@ class ChooseOperationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        withdrawBTN.setOnClickListener{
+            val intent = Intent(this, PerformOperationActivity::class.java)
+            intent.putExtra("transaction_type", "withdrawal")
+            intent.putExtra("account", account)
+            startActivity(intent)
+        }
+
+        depositBTN.setOnClickListener{
+            val intent = Intent(this, PerformOperationActivity::class.java)
+            intent.putExtra("transaction_type", "deposit")
+            intent.putExtra("account", account)
+            startActivity(intent)
+        }
+
     }
 
 }

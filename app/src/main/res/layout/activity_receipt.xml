@@ -8,7 +8,7 @@
         tools:context=".activities.ReceiptActivity">
 
     <TextView
-            android:text="Balance Withdrawal"
+            android:text="@string/check_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_title" android:layout_marginTop="8dp"

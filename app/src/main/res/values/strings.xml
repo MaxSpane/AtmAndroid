@@ -12,4 +12,9 @@
     <string name="check_balance">Check Balance</string>
     <string name="withdraw">Make Withdrawal</string>
     <string name="deposit">Make Deposit</string>
+    <string name="how_much_withdraw_title">How much do you want to WITHDRAW?</string>
+    <string name="how_much_deposit_title">How much do you want to DEPOSIT?</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="insufficient_funds">Insufficient funds</string>
+    <string name="done">Done</string>
 </resources>
